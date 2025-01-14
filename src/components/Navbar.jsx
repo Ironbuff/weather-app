@@ -17,10 +17,10 @@ function Navbar() {
         setOpen(!open)
     }
     return (
-    <div className='flex items-center md:px-28 px-6 h-[8ch] w-full gap-6 border justify-between'>
+    <div className='flex items-center md:px-28 px-12 h-[8ch] w-full gap-6 border justify-between'>
         {/* logo of app */}
         <div className='flex item-center justify-center w-[25%]'>
-            <h2 className='md:text-4xl text-2xl text-blue-900 font-bold flex-nowrap md:flex-wrap'>Nimbus 
+            <h2 className='md:text-4xl text-2xl text-blue-900 font-bold flex md:px-0 px-5'>Nimbus 
                 <span className='text-yellow-500'> Now </span>
             </h2>
         </div>
