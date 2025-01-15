@@ -5,7 +5,7 @@ import {FaX, FaBars} from "react-icons/fa6";
 function Navbar() {
     // navitems array intialization
     const navitem =[
-        {id:1,name:"Home",link:"/"},
+        {id:1,name:"Home",link:"/news"},
         {id:2, name:"Weather", link:"/"},
         
         {id:3,name:"Climate", link:"/"},

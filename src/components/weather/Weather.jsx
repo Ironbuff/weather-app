@@ -9,7 +9,7 @@ const App = () => {
 
   // Fetch weather data based on location
   const fetchWeather = async () => {
-    const API_KEY = "c874963f475450c2743e88a7249c0c4c"; // Replace with your OpenWeatherMap API key
+    const API_KEY = "cb899aff7d909ad7141bf4a7db1d8d4b"; // Replace with your OpenWeatherMap API key
     const GEOCODING_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${API_KEY}`;
     setLoading(true);
     setError(null);
