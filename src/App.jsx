@@ -1,20 +1,22 @@
 import { useState } from 'react'
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
-import './App.css'
 import Navbar from './components/navbar/Navbar'
-import Weather from './components/weather/Weather'
-import News from './components/news/News'
+import News from './pages/news/News'
+import Weather from './pages/weather/Weather'
+import Home from './pages/home/Home'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Router>
+        {/* top Navbar */}
         <Navbar/>
-        <Weather/>
+        {/* home section */}
         <Routes>
-        <Route exact path="/news" element={<news/>} />
+          {/* route to News and Weather */}
+        <Route exact path="/news" element={<News/>} />
+        <Route exact path="/weather" element={<Weather/>}/>
         </Routes>
+        <Home/>
       </Router>
     </>
   )

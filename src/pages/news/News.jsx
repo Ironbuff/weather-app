@@ -12,7 +12,7 @@ useEffect(()=>{
     const fetchNews=async()=>{
         try{
             // used tp fetch data using news api
-            const response= await axios.get("https://newsapi.org/v2/everything?q=Apple&from=2025-01-15&sortBy=popularity&apiKey=6b624cdaee814e87a8a26e3dd171492f");
+            const response= await axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=6b624cdaee814e87a8a26e3dd171492f");
             // used to store articles in state variable
             setNews(response.data.articles)
             // set loading to false after data is fetched to stop loading
@@ -33,8 +33,8 @@ if(loading){
 }
 return(
     <div className="py-10 bg-gray-100">
-    <div className="container mx-auto">
-      <h2 className="text-3xl font-bold mb-6 text-center">Top News</h2>
+    <div className="container">
+      <h2 className="text-3xl font-bold py-10 text-center">Top News</h2>
       {/* Flex container for news cards */}
       <div className="flex flex-wrap justify-center gap-6">
         {news.map((article, index) => (

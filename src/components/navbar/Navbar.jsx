@@ -6,7 +6,7 @@ function Navbar() {
     // navitems array intialization
     const navitem =[
         {id:1,name:"Home",link:"/news"},
-        {id:2, name:"Weather", link:"/"},
+        {id:2, name:"Weather", link:"/weather"},
         
         {id:3,name:"Climate", link:"/"},
     ];
