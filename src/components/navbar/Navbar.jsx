@@ -5,10 +5,10 @@ import {FaX, FaBars} from "react-icons/fa6";
 function Navbar() {
     // navitems array intialization
     const navitem =[
-        {id:1,name:"Home",link:"/news"},
+        {id:1,name:"News",link:"/news"},
         {id:2, name:"Weather", link:"/weather"},
         
-        {id:3,name:"Climate", link:"/"},
+        {id:3,name:"CatFact", link:"/cat"},
     ];
     // creating state for responsive design
     const[open,setOpen]=useState(false)
@@ -20,9 +20,11 @@ function Navbar() {
     <div className='flex items-center md:px-28 px-12 h-[8ch] w-full gap-6 border justify-between'>
         {/* logo of app */}
         <div className='flex item-center justify-center w-[25%]'>
+            <Link to="/home">
             <h2 className='md:text-4xl text-2xl text-blue-900 font-bold flex md:px-0 px-5'>Nimbus 
                 <span className='text-yellow-500'> Now </span>
             </h2>
+            </Link>
         </div>
         {/* button for ontoggle event */}
          {/* Toggle button */}
